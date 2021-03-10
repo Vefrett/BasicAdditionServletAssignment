@@ -1,0 +1,18 @@
+/*
+This is a stylesheet connected to HTML files and JSP connected by a link to the 
+head section of HTML
+*/
+/* 
+    Created on : Mar 4, 2021, 4:08:24 PM
+    Author     : Gabrielle
+*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: arial;
+}
+
+a {
+    color: white;
+}
