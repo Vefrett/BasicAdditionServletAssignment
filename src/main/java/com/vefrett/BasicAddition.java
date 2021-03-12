@@ -66,7 +66,7 @@ public class BasicAddition extends HttpServlet {
         if (error1.equals("Not a number") && error2.equals("Not a number")
             || error1.equals("Not a number") && error2.equals("") || error1.equals("")
             && error2.equals("Not a number")) {
-        output = "There is no sum.";
+        output = "There is no current sum.";
         number1 = "0";
         number2 = "0";
     } 
@@ -83,7 +83,8 @@ public class BasicAddition extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<header>");
-            out.println("<h1>Basic Addition Servlet Assignment</h1>");
+            out.println("<h1>Are you too lazy to add two numbers together on " +
+                    "your own? You've come to the right place!</h1>");
             out.println("</header>");
             out.println("<main>");
             out.println("<p>Please enter two numbers and click the Submit" 
