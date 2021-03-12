@@ -20,6 +20,8 @@
     String num1 = request.getParameter("num1");
     String num2 = request.getParameter("num2");
     String message = "";
+    String error1 = "";
+    String error2 = "";
 
     if (num1 == null || num1.equals(" ")) {
         num1 = "0";
@@ -29,7 +31,6 @@
     }
 
     BigDecimal value1 = new BigDecimal("0");
-    String error1 = "";
     try {
         value1 = new BigDecimal(num1);
     } catch (NumberFormatException e) {
@@ -37,7 +38,6 @@
     }
 
     BigDecimal value2 = BigDecimal.ZERO;
-    String error2 = "";
     try {
         value2 = new BigDecimal(num2);
     } catch (NumberFormatException e) {
